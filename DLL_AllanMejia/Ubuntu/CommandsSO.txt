@@ -1,0 +1,14 @@
+NOTA: IMPORTANTE EL LIB EN libhello.so
+First compile mydll.c to object code:
+
+gcc -c -fPIC hello.c -o hello.o
+
+Then, tell gcc that it is building a shared library:
+
+gcc hello.o -shared -o libhello.so
+
+
+NOTA: IMPORTANTE EL LIB EN libhello.so
+In one line 
+
+gcc -shared -o libhello.so -Wall -fPIC hello.c

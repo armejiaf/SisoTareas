@@ -1,0 +1,3 @@
+gcc -Wall -L. cprog.c -lctest -o cprog
+export LD_LIBRARY_PATH=.
+./cprog

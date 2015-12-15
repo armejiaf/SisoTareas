@@ -1,0 +1,8 @@
+First compile mydll.c to object code:
+
+gcc -c mydll.c
+
+Then, tell gcc that it is building a shared library:
+
+gcc -shared -o mydll.dll mydll.o
+
